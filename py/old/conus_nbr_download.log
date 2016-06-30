@@ -1,0 +1,810 @@
+
+Total number of tiles to download:  336
+
+Working on tile  1  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_19.39_21.6685714286.zip already exists. Skipping this tile.
+
+Working on tile  2  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_21.6685714286_23.9471428571.zip already exists. Skipping this tile.
+
+Working on tile  3  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_23.9471428571_26.2257142857.zip already exists. Skipping this tile.
+
+Working on tile  4  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_26.2257142857_28.5042857143.zip already exists. Skipping this tile.
+
+Working on tile  5  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_28.5042857143_30.7828571429.zip already exists. Skipping this tile.
+
+Working on tile  6  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_30.7828571429_33.0614285714.zip already exists. Skipping this tile.
+
+Working on tile  7  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_33.0614285714_35.34.zip already exists. Skipping this tile.
+
+Working on tile  8  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=0a00a3532ced9e688cd8a00ce9ecd187&token=4ae34661504c8a146d68e66c2b1cdfa4
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_35.34_37.6185714286.zip ....
+	Done!
+
+Working on tile  9  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=4bde46071402ebea1991defb94fed1a6&token=3b6becd1f679446a1c82e9f5b93ccfe6
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_37.6185714286_39.8971428571.zip ....
+	Done!
+
+Working on tile  10  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=925dbd57027befd9b4497b11e72d9295&token=e2a04c1ab239abe1767b772d6c2c8267
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_39.8971428571_42.1757142857.zip ....
+	Done!
+
+Working on tile  11  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=908a85bb33dd85645ccb277ec03e1948&token=5e7321f64ed6ee49d42c833b923866ad
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_42.1757142857_44.4542857143.zip ....
+	Done!
+
+Working on tile  12  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=19f3fc0ee8c5dfa19ca17b5537ec26b2&token=1a49699630e4f8bd203d68c45c211806
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_44.4542857143_46.7328571429.zip ....
+	Done!
+
+Working on tile  13  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=a32653684a14ccd71102d0378507092f&token=f4aaad639e1118bf565f634d2bc5e2e5
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_46.7328571429_49.0114285714.zip ....
+	Done!
+
+Working on tile  14  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-127.18_-124.495416667_49.0114285714_51.29.zip already exists. Skipping this tile.
+
+Working on tile  15  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_19.39_21.6685714286.zip already exists. Skipping this tile.
+
+Working on tile  16  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=71ac80af557eb80d8604f5b6243032de&token=615b07816ea238b43e18acce4e039462
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_21.6685714286_23.9471428571.zip ....
+	Done!
+
+Working on tile  17  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_23.9471428571_26.2257142857.zip already exists. Skipping this tile.
+
+Working on tile  18  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=fa33a657d32b8bb86d86a7f5a69633d7&token=04655b67f1303c9ad4cac603e3c8e60c
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_26.2257142857_28.5042857143.zip ....
+	Done!
+
+Working on tile  19  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_28.5042857143_30.7828571429.zip already exists. Skipping this tile.
+
+Working on tile  20  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=b1a94b94d0c6ca092d805e0bb767cbeb&token=0b2705d08d6dfdc8bc841fa2a289091b
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_30.7828571429_33.0614285714.zip ....
+	Done!
+
+Working on tile  21  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_33.0614285714_35.34.zip already exists. Skipping this tile.
+
+Working on tile  22  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=bcccd8599b6b209747d60d6fa6c3f8eb&token=af7bc6636bcc107f25de62d7aabf55b5
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_35.34_37.6185714286.zip ....
+	Done!
+
+Working on tile  23  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_37.6185714286_39.8971428571.zip already exists. Skipping this tile.
+
+Working on tile  24  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=c34493064bf86b0730ff428184132056&token=9d8feebb521b9ee5a6d6691cb5ebd264
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_39.8971428571_42.1757142857.zip ....
+	Done!
+
+Working on tile  25  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_42.1757142857_44.4542857143.zip already exists. Skipping this tile.
+
+Working on tile  26  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=ce3b1a2a8127ace9d598d7523157cf94&token=18bd0b47e2163b30231aa4164227b4e8
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_44.4542857143_46.7328571429.zip ....
+	Done!
+
+Working on tile  27  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_46.7328571429_49.0114285714.zip already exists. Skipping this tile.
+
+Working on tile  28  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=e07e2a2ab2b1e2f5257c0eab6c33cba6&token=d3b684989e3aea952e4041af52233973
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-124.495416667_-121.810833333_49.0114285714_51.29.zip ....
+	Done!
+
+Working on tile  29  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_19.39_21.6685714286.zip already exists. Skipping this tile.
+
+Working on tile  30  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=8282da65f3d58e63967c8c5644ed56e7&token=47dd060eaef4551516e12cc4f00c8fff
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_21.6685714286_23.9471428571.zip ....
+	Done!
+
+Working on tile  31  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_23.9471428571_26.2257142857.zip already exists. Skipping this tile.
+
+Working on tile  32  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_26.2257142857_28.5042857143.zip already exists. Skipping this tile.
+
+Working on tile  33  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=a2a1ebd8fec12199d096825cdb364508&token=b0e3bb5220d4d4df6d072b74babec9e7
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_28.5042857143_30.7828571429.zip ....
+	Done!
+
+Working on tile  34  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_30.7828571429_33.0614285714.zip already exists. Skipping this tile.
+
+Working on tile  35  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=9290d2dc6f4f61a3cc8a57db4fb4341a&token=b6d31e58fefba9c08dd33820627ec496
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_33.0614285714_35.34.zip ....
+	Done!
+
+Working on tile  36  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=e5910f1c0313cbe0508eb75fd1bfaf03&token=be0ddb0dea3b6f6bb6a11e162dce50f3
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_35.34_37.6185714286.zip ....
+	Done!
+
+Working on tile  37  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=fa6d8a642380202e2ea6e0b971d666a6&token=cf778d60296106ee49e249964f03024e
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_37.6185714286_39.8971428571.zip ....
+	Done!
+
+Working on tile  38  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=f07e669f715ac2f87767c80c87feedc0&token=da41a64587151cace6050e982c7578d5
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_39.8971428571_42.1757142857.zip ....
+	Done!
+
+Working on tile  39  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=735170d1a640b8f428d7874bba390555&token=ef4859785b41f6e6bf8e19ffd9a1a131
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_42.1757142857_44.4542857143.zip ....
+	Done!
+
+Working on tile  40  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_44.4542857143_46.7328571429.zip already exists. Skipping this tile.
+
+Working on tile  41  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=2297a2cbe11089675854dfbb941c0a83&token=6d8f249d46eb2fe1bb66df166b9b36ac
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_46.7328571429_49.0114285714.zip ....
+	Done!
+
+Working on tile  42  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-121.810833333_-119.12625_49.0114285714_51.29.zip already exists. Skipping this tile.
+
+Working on tile  43  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=635aca8ea89ab212356ec719fdc18374&token=ecf85c2978db18908deea41e2d1076b4
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_19.39_21.6685714286.zip ....
+	Done!
+
+Working on tile  44  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_21.6685714286_23.9471428571.zip already exists. Skipping this tile.
+
+Working on tile  45  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=cfe771b4ac02c9df9c800906d6e48133&token=5ecdceae259fd06f66794d1dcf95e230
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_23.9471428571_26.2257142857.zip ....
+	Done!
+
+Working on tile  46  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_26.2257142857_28.5042857143.zip already exists. Skipping this tile.
+
+Working on tile  47  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=2716b024807f8c56365381e4cf85fe64&token=7ba44ea95a479a693ce3d9dc16455768
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_28.5042857143_30.7828571429.zip ....
+	Done!
+
+Working on tile  48  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_30.7828571429_33.0614285714.zip already exists. Skipping this tile.
+
+Working on tile  49  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=01eca7c33730df0a7ef98ca9d72dc06e&token=bd96a938e6aa7c9dd7f39ddeccb1f751
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_33.0614285714_35.34.zip ....
+	Done!
+
+Working on tile  50  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_35.34_37.6185714286.zip already exists. Skipping this tile.
+
+Working on tile  51  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=281ed76b10577398ff7e5e0f19df11a7&token=fa7c16f14c4882cf86629cffb5dda43c
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_37.6185714286_39.8971428571.zip ....
+	Done!
+
+Working on tile  52  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_39.8971428571_42.1757142857.zip already exists. Skipping this tile.
+
+Working on tile  53  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=1531ab7262115fc2e660df32f582b3ed&token=e51b6a96548e276390d3ff07ba53e047
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_42.1757142857_44.4542857143.zip ....
+	Done!
+
+Working on tile  54  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_44.4542857143_46.7328571429.zip already exists. Skipping this tile.
+
+Working on tile  55  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=f3f9f6fe7664926089cb82bd0c5e4860&token=e0edb9e8047cbed7fbcc4a1f80f845dd
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_46.7328571429_49.0114285714.zip ....
+	Done!
+
+Working on tile  56  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=5f0b5132638cc99e05904394d4c68b6b&token=bd0f7493862d7f8726cc9a06a6641273
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-119.12625_-116.441666667_49.0114285714_51.29.zip ....
+	Done!
+
+Working on tile  57  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=9283c6a6acb6b73a4a0a89bec24fd1b9&token=6c49347939f47b9cf3d69792f55f1cf6
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_19.39_21.6685714286.zip ....
+	Done!
+
+Working on tile  58  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=abb114e9eaa1ae63399caa9f329b2d66&token=01a1738bb4962eaeb318008e046a8123
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_21.6685714286_23.9471428571.zip ....
+	Done!
+
+Working on tile  59  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=219c19d55d48462301736a40fbe74fb5&token=8777ea001ca2125a47f152440eb1f388
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_23.9471428571_26.2257142857.zip ....
+	Done!
+
+Working on tile  60  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_26.2257142857_28.5042857143.zip already exists. Skipping this tile.
+
+Working on tile  61  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=eef41e5f8ef9832f308b2b6158e71890&token=a4d16719184a7ba067e0ba37476c3648
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_28.5042857143_30.7828571429.zip ....
+	Done!
+
+Working on tile  62  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_30.7828571429_33.0614285714.zip already exists. Skipping this tile.
+
+Working on tile  63  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=ee165b6b983cb49613e3f689dd40b34e&token=8155da6e165d0af9513278364b518be5
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_33.0614285714_35.34.zip ....
+	Done!
+
+Working on tile  64  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_35.34_37.6185714286.zip already exists. Skipping this tile.
+
+Working on tile  65  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=ab4e2695523d22ff8c8b875a13fe1eaf&token=1b448326892e41700f891e4e7d3911c4
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_37.6185714286_39.8971428571.zip ....
+	Done!
+
+Working on tile  66  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_39.8971428571_42.1757142857.zip already exists. Skipping this tile.
+
+Working on tile  67  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=316c9ec896e1e21888d6a379ae649f17&token=6028e38bd282158ea5ea9030860b3cdb
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_42.1757142857_44.4542857143.zip ....
+	Done!
+
+Working on tile  68  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_44.4542857143_46.7328571429.zip already exists. Skipping this tile.
+
+Working on tile  69  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=ecc83af8bd5bf449f431eb2454906b40&token=f41c15db0bdfec8b830adb075fdd2264
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_46.7328571429_49.0114285714.zip ....
+	Done!
+
+Working on tile  70  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-116.441666667_-113.757083333_49.0114285714_51.29.zip already exists. Skipping this tile.
+
+Working on tile  71  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=b4ca23229461548d477e3abcc88061da&token=647255b14df69bbbf9f77266e7c0ed10
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_19.39_21.6685714286.zip ....
+	Done!
+
+Working on tile  72  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_21.6685714286_23.9471428571.zip already exists. Skipping this tile.
+
+Working on tile  73  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=8ce71a07e9641e8ce05ce70fa0ba95ac&token=e00f1f1d8b01a29ec280cd9e048ea934
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_23.9471428571_26.2257142857.zip ....
+	Done!
+
+Working on tile  74  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_26.2257142857_28.5042857143.zip already exists. Skipping this tile.
+
+Working on tile  75  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=2aefd706146f6181c445327df8518e9b&token=a8edda5295b36a1e838f19c27a6ac92d
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_28.5042857143_30.7828571429.zip ....
+	Done!
+
+Working on tile  76  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_30.7828571429_33.0614285714.zip already exists. Skipping this tile.
+
+Working on tile  77  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=7cc6c14254e281f4d36cae43d73bf762&token=7bf726225868a762dca3abca93f6ddc7
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_33.0614285714_35.34.zip ....
+	Done!
+
+Working on tile  78  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_35.34_37.6185714286.zip already exists. Skipping this tile.
+
+Working on tile  79  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_37.6185714286_39.8971428571.zip already exists. Skipping this tile.
+
+Working on tile  80  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=b222ba2e94de88e2adb2aeaf651ad688&token=4b1145872ace8a258bb205e0e8cbc5da
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_39.8971428571_42.1757142857.zip ....
+	Done!
+
+Working on tile  81  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=064d48eb2dfb4e9f3dcff0348bac1ee3&token=f8f98465246428c85b15ecaf76c7c18b
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_42.1757142857_44.4542857143.zip ....
+	Done!
+
+Working on tile  82  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_44.4542857143_46.7328571429.zip already exists. Skipping this tile.
+
+Working on tile  83  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=50647d58986f97561180d377058e9577&token=9024db08c2c862f0e5ec0fdaf1e9dd91
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_46.7328571429_49.0114285714.zip ....
+	Done!
+
+Working on tile  84  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-113.757083333_-111.0725_49.0114285714_51.29.zip already exists. Skipping this tile.
+
+Working on tile  85  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=b4728ba0912ad22c67c5192dea5af01f&token=2fd2caa57c55a54d00e650d0408344df
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_19.39_21.6685714286.zip ....
+	Done!
+
+Working on tile  86  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_21.6685714286_23.9471428571.zip already exists. Skipping this tile.
+
+Working on tile  87  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=679f5c9098ca0f35e07872a6679e2e87&token=384d49ec7fbfe160e5fad5e5de5a2baf
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_23.9471428571_26.2257142857.zip ....
+	Done!
+
+Working on tile  88  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_26.2257142857_28.5042857143.zip already exists. Skipping this tile.
+
+Working on tile  89  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_28.5042857143_30.7828571429.zip already exists. Skipping this tile.
+
+Working on tile  90  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=9fe5d74c907eec7aca5962a7133e6f73&token=a16def208500c4b477e9269191c3f1ee
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_30.7828571429_33.0614285714.zip ....
+	Done!
+
+Working on tile  91  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_33.0614285714_35.34.zip already exists. Skipping this tile.
+
+Working on tile  92  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=04c91849d10b1a5eafc902a5ca0a89ea&token=5fd0164a5ff81f280a491a171ceb0805
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_35.34_37.6185714286.zip ....
+	Done!
+
+Working on tile  93  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_37.6185714286_39.8971428571.zip already exists. Skipping this tile.
+
+Working on tile  94  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=bb4ca9bf412766c8ef40be0d58990c78&token=adfb669d5ecc5c277a5c8dedcb5cfb0d
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_39.8971428571_42.1757142857.zip ....
+	Done!
+
+Working on tile  95  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_42.1757142857_44.4542857143.zip already exists. Skipping this tile.
+
+Working on tile  96  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=e80c6261ffe1f8b26ea8979916f9e0b3&token=9830b4a649dd3ada53ab6d2032a02872
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_44.4542857143_46.7328571429.zip ....
+	Done!
+
+Working on tile  97  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_46.7328571429_49.0114285714.zip already exists. Skipping this tile.
+
+Working on tile  98  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=c075f8c464c9dcb5a7905e2a460d3891&token=3eb98162f857d2bb954dc8f515dd7c98
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-111.0725_-108.387916667_49.0114285714_51.29.zip ....
+	Done!
+
+Working on tile  99  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_19.39_21.6685714286.zip already exists. Skipping this tile.
+
+Working on tile  100  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=3af21134814df368dec636f682adb11f&token=0fbbe30cab4c34861f1db8f94e850bdc
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_21.6685714286_23.9471428571.zip ....
+	Done!
+
+Working on tile  101  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=fe1544399b2db1c247822bf85cb173da&token=292386f3998d96097d2f5d263ada8eb5
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_23.9471428571_26.2257142857.zip ....
+	Done!
+
+Working on tile  102  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_26.2257142857_28.5042857143.zip already exists. Skipping this tile.
+
+Working on tile  103  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=da869527a2059d478d9d136b4bba3252&token=30c9dfd6616e03f7fbd176a64ae2d060
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_28.5042857143_30.7828571429.zip ....
+	Done!
+
+Working on tile  104  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_30.7828571429_33.0614285714.zip already exists. Skipping this tile.
+
+Working on tile  105  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=d8fd3191fadea3e09d6a4addcea00f09&token=707e443cb7c7275b1f96da76c9a85fbe
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_33.0614285714_35.34.zip ....
+	Done!
+
+Working on tile  106  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_35.34_37.6185714286.zip already exists. Skipping this tile.
+
+Working on tile  107  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=7d177ac9245c4e5e6cc499a96d45a427&token=a23e46d0f1d5e3a9d673e719075a8569
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_37.6185714286_39.8971428571.zip ....
+	Done!
+
+Working on tile  108  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_39.8971428571_42.1757142857.zip already exists. Skipping this tile.
+
+Working on tile  109  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=9b0cbb16d83f45e3c00f1d1d1b427160&token=f642594e4c443ee2d0c21d3c0094ab94
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_42.1757142857_44.4542857143.zip ....
+	Done!
+
+Working on tile  110  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_44.4542857143_46.7328571429.zip already exists. Skipping this tile.
+
+Working on tile  111  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=048f30b7696fa752527ffb47259ff49c&token=e449bc66cc4daee79e45761d9a9d2e02
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_46.7328571429_49.0114285714.zip ....
+	Done!
+
+Working on tile  112  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-108.387916667_-105.703333333_49.0114285714_51.29.zip already exists. Skipping this tile.
+
+Working on tile  113  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=67ea043c2b7bcc08bf05564472bdabbb&token=7c635e5c28c72d5fb91945dd4d785f56
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_19.39_21.6685714286.zip ....
+	Done!
+
+Working on tile  114  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_21.6685714286_23.9471428571.zip already exists. Skipping this tile.
+
+Working on tile  115  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=e62c2d830a3ed8d28b52322d159fa964&token=66483410f8fbb0ae429fc50742bcbe8b
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_23.9471428571_26.2257142857.zip ....
+	Done!
+
+Working on tile  116  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_26.2257142857_28.5042857143.zip already exists. Skipping this tile.
+
+Working on tile  117  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=f736ef66a4874c0206b9c51b4de6eda2&token=57e27ef25302d65106495cf65331130c
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_28.5042857143_30.7828571429.zip ....
+	Done!
+
+Working on tile  118  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_30.7828571429_33.0614285714.zip already exists. Skipping this tile.
+
+Working on tile  119  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=15c24ce1f2449f971355ba005cf23b53&token=adf258584fdf90ba0de3643272d19da0
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_33.0614285714_35.34.zip ....
+	Done!
+
+Working on tile  120  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_35.34_37.6185714286.zip already exists. Skipping this tile.
+
+Working on tile  121  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=43d4180e7a65fd2696b35770ecf4620e&token=c78b2d4478fea997f9006a3b0d91073e
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_37.6185714286_39.8971428571.zip ....
+	Done!
+
+Working on tile  122  of  336 ...
+/vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_39.8971428571_42.1757142857.zip already exists. Skipping this tile.
+
+Working on tile  123  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=b2d328da93bf1398f873a273dc45dde4&token=48e573f00ff718011844ddf010daea7e
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_42.1757142857_44.4542857143.zip ....
+	Done!
+
+Working on tile  124  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=0da335768cd764548850f8f1a07b7472&token=864c3eab957edea9733758c733ac4d91
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_44.4542857143_46.7328571429.zip ....
+	Done!
+
+Working on tile  125  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=f65858b549fa29acfc09e27dcdcc13c2&token=b07247a4d22706caabcd4833dff7e371
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_46.7328571429_49.0114285714.zip ....
+	Done!
+
+Working on tile  126  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=3a952875352d25022374ffb2b06ce162&token=e84a0fbf8bc0d35bf2d17c989a8d6b3d
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-105.703333333_-103.01875_49.0114285714_51.29.zip ....
+	Done!
+
+Working on tile  127  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=a83792645739bb5bf7d58040a3699256&token=6b1eb871f5c28110fe6057eec986d2f6
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-103.01875_-100.334166667_19.39_21.6685714286.zip ....
+	Done!
+
+Working on tile  128  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=221cf3908d3a47b803d9621fa29ab577&token=68342fce273776051b0b75f7bd54f527
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-103.01875_-100.334166667_21.6685714286_23.9471428571.zip ....
+	Done!
+
+Working on tile  129  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=db3ecb3edeb0bf8a5f53e241f3f0892c&token=66fd0db520646c8c286cff5b420d8cbc
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-103.01875_-100.334166667_23.9471428571_26.2257142857.zip ....
+	Done!
+
+Working on tile  130  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=d872eb26e2bad590af3521652fce1b25&token=5ac265479a22c0bb2629ea7db2c31fda
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-103.01875_-100.334166667_26.2257142857_28.5042857143.zip ....
+	Done!
+
+Working on tile  131  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=102689be416ecccd8ea254137c8d99c1&token=35a75e96b628edf2e742107c5c65cf2b
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-103.01875_-100.334166667_28.5042857143_30.7828571429.zip ....
+	Done!
+
+Working on tile  132  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=8bf51242c62e7866c2989ac090ef9bf9&token=fb4c8a9fe2ea237caabea1077b4659c6
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-103.01875_-100.334166667_30.7828571429_33.0614285714.zip ....
+	Done!
+
+Working on tile  133  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=e44ef0d135951ee19ec1ebfe053d549e&token=feb9fa5adeac87eb93ff6033cce005d3
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-103.01875_-100.334166667_33.0614285714_35.34.zip ....
+	Done!
+
+Working on tile  134  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=0234e742a5a281a0dc9be3cd90c54940&token=85838c8e059624fbef44c8e3b6782233
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-103.01875_-100.334166667_35.34_37.6185714286.zip ....
+	Done!
+
+Working on tile  135  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=83c3b77d80f93793f7247da2b07779cb&token=d2c25f21b1a3a2e776091f9479e02a50
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-103.01875_-100.334166667_37.6185714286_39.8971428571.zip ....
+	Done!
+
+Working on tile  136  of  336 ...
+
+Your download path:
+https://earthengine.googleapis.com//api/download?docid=c232385804489c4b95368aaffa5d6ee8&token=d84db1a976d5cb33d9eb495ffbbc3d50
+
+Downloading url to /vol/v1/ee_conus/nbr/conus_nbr_-103.01875_-100.334166667_39.8971428571_42.1757142857.zip ....
+Traceback (most recent call last):
+  File "conusDownload.py", line 97, in <module>
+    
+  File "conusDownload.py", line 82, in main
+    
+  File "/home/server/pi/homes/tlarrue/.conda/envs/ee-python/lib/python2.7/urllib.py", line 245, in retrieve
+    fp = self.open(url, data)
+  File "/home/server/pi/homes/tlarrue/.conda/envs/ee-python/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/home/server/pi/homes/tlarrue/.conda/envs/ee-python/lib/python2.7/urllib.py", line 457, in open_https
+    return self.http_error(url, fp, errcode, errmsg, headers)
+  File "/home/server/pi/homes/tlarrue/.conda/envs/ee-python/lib/python2.7/urllib.py", line 381, in http_error
+    return self.http_error_default(url, fp, errcode, errmsg, headers)
+  File "/home/server/pi/homes/tlarrue/.conda/envs/ee-python/lib/python2.7/urllib.py", line 386, in http_error_default
+    raise IOError, ('http error', errcode, errmsg, headers)
+IOError: ('http error', 429, 'unknown', <httplib.HTTPMessage instance at 0x7f45ac5efb00>)

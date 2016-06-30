@@ -1,7 +1,8 @@
 '''
 LandTrendr Validation with TimeSync interpretations.
 This script takes a CSV w/ Aligned TimeSync interpretations & extracted LandTrendr kernels 
-w/ summary stats on the LT pixels and creates 2 confusion matrices comparing given LT summary stat w/ TS data.
+w/ summary stats on the LT pixels and creates 2 confusion matrices comparing given 
+LT summary stat w/ TS data.
 
 Author: Tara Larrue (tlarrue2991@gmail.com)
 '''
@@ -9,95 +10,88 @@ import numpy as np
 from lthacks.lthacks import *
 import datetime
 
-#DEFINITIONS OF TIMESYNC/LANDTRENDR CATEGORIES & MATCHES##
-# LT_BINS = [0, 1, 4, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 200]
-# LT_NONDISTURBANCES = ["0_1", "1_4", "4_10"]
-# LT_DISTURBANCES = ["10_20", "20_30", "30_40", "40_50", "50_60", "60_70", "70_80", "80_90", "90_100", "100_200"]
-# TS_NONDISTURBANCES = ["STABLE_0", "DELAY_1", "DELAY_2", "DELAY_3", "OTHER NON-DISTURBANCE_0", "RECOVERY_0"]
-# TS_DISTURBANCES = ["FIRE_1", "FIRE_2", "FIRE_3", "HARVEST_0", "HARVEST_1", "HARVEST_2", "HARVEST_3",
-# 				   "MECHANICAL_0", "MECHANICAL_1", "MECHANICAL_2", "MECHANICAL_3", "OTHER DISTURBANCE_1",
-# 				   "OTHER DISTURBANCE_2", "SITE-PREPARATION FIRE_0", "SITE-PREPARATION FIRE_1", "SITE-PREPARATION FIRE_2", 
-# 				   "SITE-PREPARATION FIRE_3", "STRESS_0", "STRESS_1", "STRESS_2", "STRESS_3", "WATER_2"]
-# MATCH_DICT = {}
-# for i in LT_DISTURBANCES + TS_DISTURBANCES: MATCH_DICT[i] = "DISTURBANCE"
-# for i in LT_NONDISTURBANCES + TS_NONDISTURBANCES: MATCH_DICT[i] = "NON_DISTURBANCE"
-###########################################################
-
-# DEFINITIONS OF TIMESYNC/LANDTRENDR CATEGORIES & MATCHES - VERTVALS##
-LT_BINS = [-1500, -250, -50, -10, -5, -0.001, 0.001, 5, 10, 50, 250, 1500] #dNBR
-LT_DISTURBANCES = ["-1500_-250", "-250_-50", "-50_-10"]
-#LT_STABLE = ["-10_-5", "-5_-0.001", "-0.001_0.001", "0.001_5", "5_10"]
-#LT_NONDISTURBANCES = ["10_50", "50_250", "250_1500"]
-LT_NONDISTURBANCES = ["-10_-5", "-5_-0.001", "-0.001_0.001", "0.001_5", "5_10", "10_50", "50_250", "250_1500"]
-#TS_STABLE = ["STABLE_0","OTHER NON-DISTURBANCE_0","DELAY_1", "DELAY_2", "DELAY_3"]
-#TS_NONDISTURBANCES = ["RECOVERY_0"]
-TS_NONDISTURBANCES = ["RECOVERY_0", "STABLE_0","OTHER NON-DISTURBANCE_0","DELAY_1", "DELAY_2", "DELAY_3"]
-TS_DISTURBANCES = ["FIRE_1", "FIRE_2", "FIRE_3", "HARVEST_0", "HARVEST_1", "HARVEST_2", "HARVEST_3",
-				   "MECHANICAL_0", "MECHANICAL_1", "MECHANICAL_2", "MECHANICAL_3", "OTHER DISTURBANCE_1",
-				   "OTHER DISTURBANCE_2", "SITE-PREPARATION FIRE_0", "SITE-PREPARATION FIRE_1", "SITE-PREPARATION FIRE_2", 
-				   "SITE-PREPARATION FIRE_3", "STRESS_0", "STRESS_1", "STRESS_2", "STRESS_3", "WATER_2"]
-MATCH_DICT = {}
-for i in LT_DISTURBANCES + TS_DISTURBANCES: MATCH_DICT[i] = "DISTURBANCE"
-for i in LT_NONDISTURBANCES + TS_NONDISTURBANCES: MATCH_DICT[i] = "NON_DISTURBANCE"
-#for i in LT_STABLE + TS_STABLE: MATCH_DICT[i] = "STABLE"
-# ##########################################################
-
 def getTxt(file):
 	'''reads parameter file & extracts inputs'''
+	
+	#open parameter file
 	txt = open(file, 'r')
+	
+	#skip 1st line (title line)
 	next(txt)
+	
+	#define empty parameter dictionary
+	parameters = {}
 
+	#loop through parameter file lines & construct parameter dictionary
 	for line in txt:
-		if not line.startswith('#'):
+	
+		if not line.startswith('#'): #skip commented out lines
 			lineitems = line.split(':')
-			title = lineitems[0].strip(' \n')
+			title = lineitems[0].strip(' \n').lower()
 			var = lineitems[1].strip(' \n')
-
-			if title.lower() == 'inputcsv':
-				inputCsv = var
-			elif title.lower() == "modelregion":
-				MR = var
-			elif title.lower() == 'ltcolumn':
-				ltcolumn = var			
-			elif title.lower() == 'tolerance':
-				tolerance = int(var)
-			elif title.lower() == 'outputpath_yearlybins':
-				outputpath_yearlybins = var
-			elif title.lower() == 'outputpath_events':
-				outputpath_events = var
-			elif title.lower() == 'outputpath_broadcm':
-				outputpath_broadcm = var
-			elif title.lower() == 'outputpath_detailedcm':
-				outputpath_detailedcm = var
-			elif title.lower() == 'lt_bins':
-				lt_bins = [float(i.strip()) for i in var.split(",")]	
-		
+			
+			#specify how to read specific parameters
+			if title in ['inputcsv', 'modelregion', 'outputpath_yearlybins', 
+						 'outputpath_events', 'outputpath_broadcm', 
+						 'outputpath_detailedcm']:
+						 
+				parameters[title] = var
+				
+			elif title in ['ltcolumn']:
+				
+				parameters[title] = var.upper()
+				
+			elif title in ['tolerance']:
+				
+				parameters[title] = int(var)
+				
+			elif title in ['lt_bins', 'lt_disturbance_bounds', 'lt_nondisturbance_bounds']:
+				
+				floats = [float(i.strip()) for i in var.split(",")]
+				int_bools = [i.is_integer() for i in floats]
+				parameters[title] = [int(f) if b else f for f,b in zip(floats,int_bools)]
+				
+			elif title in ['ts_disturbances', 'ts_nondisturbances']:
+				
+				parameters[title] = [i.strip().upper() for i in var.split(",")]
+				
+			else:
+			
+				print "\nWARNING: parameter not understood: ", title
+						 
 	txt.close()
-	return inputCsv, MR, ltcolumn, tolerance, outputpath_yearlybins, outputpath_events, \
-	outputpath_broadcm, outputpath_detailedcm
+	
+	return parameters
 
-def binValidationData(csvData, ltCol, tsCols=["CHANGE_PROCESS", "RELATIVE_MAGNITUDE"], 
-                      plotCol="PLOTID", yearCol="IMAGE_YEAR", ltbins=LT_BINS):
-	'''Bins LandTrendr & Timesync data from aligned CSV data, outputs new data array'''
+def binValidationData(csvData, ltCol, ltbins, matches, plotCol="PLOTID", 
+yearCol="IMAGE_YEAR", tsCols=["CHANGE_PROCESS", "RELATIVE_MAGNITUDE"]):
+	'''Bins LandTrendr & Timesync data from aligned summary data, outputs new data array'''
+	
 	print "\nBinning LandTrendr & TimeSync data..."
+	
 	#define new structured array & populate plot/year data
 	dtypes = [(plotCol,'f8'), (yearCol,'f8'), ("TIMESYNC", 'a32'), ("LANDTRENDR", 'a32'), 
 	          ("TS_MATCH", 'a32'), ("LT_MATCH", 'a32')]
 	binnedArray = np.zeros(csvData.size, dtype=dtypes)
+	
+	#initialize new array with plot ids and year data
 	binnedArray[plotCol] = csvData[plotCol]
 	binnedArray[yearCol] = csvData[yearCol]
 
-	#loop thru rows & bin data & populate "MATCH" columns w/ 'DISTURBANCE' or 'NON-DISTURBANCE'
+	#loop thru rows & bin data & populate MATCH columns w/ 'DISTURBANCE'/'NON-DISTURBANCE'
 	#TimeSync binned by concatenating change process & relative magitude
 	#LandTrendr binned using magnitude LT_BINS defined above
-	digitized = np.digitize(csvData[ltCol], LT_BINS)
+	digitized = np.digitize(csvData[ltCol], ltbins)
+	
 	for ind,row in enumerate(csvData):
-		binnedArray["TIMESYNC"][ind] = str(row[tsCols[0]].upper()) + "_" + str(row[tsCols[1]]) 
-		binnedArray["LANDTRENDR"][ind] = str(LT_BINS[digitized[ind]-1]) + "_" + str(LT_BINS[digitized[ind]])
+		binnedArray["TIMESYNC"][ind] = str(row[tsCols[0]].upper()) + "_" + \
+		str(row[tsCols[1]]) 
+		binnedArray["LANDTRENDR"][ind] = str(ltbins[digitized[ind]-1]) + "_" + \
+		str(ltbins[digitized[ind]])
 
 		try:
-			binnedArray["TS_MATCH"][ind] = MATCH_DICT[binnedArray["TIMESYNC"][ind].upper()]
-			binnedArray["LT_MATCH"][ind] = MATCH_DICT[binnedArray["LANDTRENDR"][ind].upper()]
+			binnedArray["TS_MATCH"][ind] = matches[binnedArray["TIMESYNC"][ind].upper()]
+			binnedArray["LT_MATCH"][ind] = matches[binnedArray["LANDTRENDR"][ind].upper()]
 		except KeyError:
 			print "WARNING: Skipping ", binnedArray["TIMESYNC"][ind], " ", binnedArray["LANDTRENDR"][ind]
 			continue
@@ -112,12 +106,16 @@ def isMatch(row, col1="TS_MATCH", col2="LT_MATCH"):
 		match = True
 	return match
 
-def applyYearTolerance(binnedData, plotCol="PLOTID", yearCol="IMAGE_YEAR", yearTolerance=1): 
+def applyYearTolerance(binnedData, yearTolerance, matches, lt_nondisturbances, 
+plotCol="PLOTID", yearCol="IMAGE_YEAR"): 
 	'''Bins LandTrendr & Timesync data from aligned CSV data, then creates a '''
+	
 	print "\nApplying " + str(yearTolerance) + " year tolerance..."
+	
 	#define new structured array
-	altYears = range(1,yearTolerance+1)
-	ltAlts = ["LANDTRENDR_ALT{0}".format(k) for k in ["-"+str(i) for i in altYears]+["+"+str(j) for j in altYears]]
+	altYears = range(1, yearTolerance+1)
+	ltAlts = ["LANDTRENDR_ALT{0}".format(k) for k in ["-"+str(i) for i in altYears] + \
+	["+"+str(j) for j in altYears]]
 	headersToAdd = ltAlts+["LANDTRENDR_FINAL", "LANDTRENDR_FINAL_NOCONSEC"]
 	binnedData = append_fields(binnedData, headersToAdd, 
 	                           data=[np.zeros(binnedData.size) for i in headersToAdd], 
@@ -137,7 +135,7 @@ def applyYearTolerance(binnedData, plotCol="PLOTID", yearCol="IMAGE_YEAR", yearT
 					binnedData[alt][ind] = binnedData["LANDTRENDR"][test][0] 
 					try:
 						#change LT_MATCH column based on alternative
-						binnedData["LT_MATCH"][ind] = MATCH_DICT[binnedData[alt][ind].upper()] 
+						binnedData["LT_MATCH"][ind] = matches[binnedData[alt][ind].upper()] 
 					except KeyError:
 						continue
 				if isMatch(row):
@@ -156,17 +154,24 @@ def applyYearTolerance(binnedData, plotCol="PLOTID", yearCol="IMAGE_YEAR", yearT
 				binnedData["LANDTRENDR_FINAL"][ind] = row[alt]
 				#binnedData["LANDTRENDR"][ind + int(alt[-2:])] = "0" #SHOULD THIS BE HERE???
 
-		if (MATCH_DICT[binnedData["LANDTRENDR_FINAL"][ind]] == "DISTURBANCE"):
-			if (MATCH_DICT[binnedData["LANDTRENDR_FINAL"][ind-1]] == "DISTURBANCE") and (binnedData["LANDTRENDR_FINAL"][ind-1] == binnedData["LANDTRENDR_FINAL"][ind]):
+		if (matches[binnedData["LANDTRENDR_FINAL"][ind]] == "DISTURBANCE"):
+		
+			if ind != 0:
+				if (matches[binnedData["LANDTRENDR_FINAL"][ind-1]] == "DISTURBANCE") and \
+				(binnedData["LANDTRENDR_FINAL"][ind-1] == binnedData["LANDTRENDR_FINAL"][ind]):
 				
-				for bin in LT_NONDISTURBANCES:
-					edges = [float(b) for b in bin.split("_")]
-					print edges
-					if (0 >= edges[0]) and (0 <= edges[1]):
-						lt_zero_bin = bin
-						binnedData["LANDTRENDR_FINAL_NOCONSEC"][ind] = lt_zero_bin
-						print "here", ind
+					for bin in lt_nondisturbances:
+				
+						edges = [float(b) for b in bin.split("_")]
+					
+						if (0 >= edges[0]) and (0 <= edges[1]):
+					
+							lt_zero_bin = bin
+							binnedData["LANDTRENDR_FINAL_NOCONSEC"][ind] = lt_zero_bin
 						
+				else:
+					binnedData["LANDTRENDR_FINAL_NOCONSEC"][ind] = binnedData["LANDTRENDR_FINAL"][ind]
+					
 			else:
 				binnedData["LANDTRENDR_FINAL_NOCONSEC"][ind] = binnedData["LANDTRENDR_FINAL"][ind]
 		
@@ -258,48 +263,87 @@ def addHeader(csvFile, MR):
 	fd.write("\n" + datetime.datetime.now().strftime("%I:%M%p %B %d %Y"))
 	fd.write("\n" + "Model Region: " + MR)
 	fd.close()
-
-def main(params):
-
-	inputCsv, MR, ltcolumn, tolerance, outputpath_yearlybins, outputpath_events, \
-	outputpath_broadcm, outputpath_detailedcm = getTxt(params)
-
-	#bin TS & LT data & apply tolerance if > 0 - save columns
-	inputData = csvToArray(inputCsv)
-
-		
-	if "vertvals" in inputCsv:
-		binnedData = binValidationData(inputData, ltcolumn, yearCol="YEAR")
-	else:
-		binnedData = binValidationData(inputData, ltcolumn)
 	
-	if tolerance > 0:
-		if "vertvals" in inputCsv:
-			binnedData = applyYearTolerance(binnedData, yearCol="YEAR", yearTolerance=tolerance)
-		else:
-			binnedData = applyYearTolerance(binnedData, yearTolerance=tolerance)
+def defineBinsFromBounds(allbins, bounds):
+
+	bins = []
+	bound_nums = []
+	for ind,i in enumerate(allbins):
+	
+		if ((i >= bounds[0]) and (i <= bounds[1])):
+			bound_nums.append(i)
 			
-	arrayToCsv(binnedData, outputpath_yearlybins)
-	addHeader(outputpath_yearlybins, MR)
+		if len(bound_nums) == 2:
+			#ints = [bound_nums[0].is_integer(), bound_nums[1].is_integer()]
+			#bounds = [int(b) if t else b for b,t in zip(bound_nums,ints)]
+				
+			bins.append(str(bound_nums[0]) + "_" + str(bound_nums[1]))
+			bound_nums = [bound_nums[1]] #reset
+			
+	return bins
+	
 
-	#isolate events
-	if "vertvals" in inputCsv:
-		eventsData = isolateEvents(binnedData, yearCol="YEAR")
+def main(parameter_file_path):
+
+	parameters = getTxt(parameter_file_path)
+
+	#read input summary data
+	inputData = csvToArray(parameters['inputcsv'])
+	
+	#define LandTrendr bin groupings
+	lt_disturbances = defineBinsFromBounds(parameters['lt_bins'], 
+	parameters['lt_disturbance_bounds'])
+	
+	lt_nondisturbances = defineBinsFromBounds(parameters['lt_bins'], 
+	parameters['lt_nondisturbance_bounds'])
+	
+	#define match dictionary
+	matches = {}
+	for i in lt_disturbances + parameters['ts_disturbances']: 
+		matches[i] = "DISTURBANCE"
+	for i in lt_nondisturbances + parameters['ts_nondisturbances']: 
+		matches[i] = "NON_DISTURBANCE"
+				
+	#bin Timesync & LandTrendr data & apply tolerance if tolerance param > 0
+	if "vertvals" in parameters['inputcsv']:
+		binnedData = binValidationData(inputData, parameters['ltcolumn'], 
+		parameters['lt_bins'], matches, yearCol="YEAR")
 	else:
-		eventsData = isolateEvents(binnedData)
-	arrayToCsv(eventsData, outputpath_events)
-	addHeader(outputpath_events, MR)
+		binnedData = binValidationData(inputData, parameters['ltcolumn'], 
+		parameters['lt_bins'], matches)
+		
+	arrayToCsv(binnedData, parameters['outputpath_events'])
 
-	#create broad confusion matrix
-	labels = np.unique(eventsData["TS_MATCH"])
-	inds = np.where(eventsData["TIMESYNC"] != "None")
-	broadcm = makeConfusion(eventsData["TS_MATCH"][inds], eventsData["LT_MATCH"][inds], labels)
-	arrayToCsv(broadcm, outputpath_broadcm)
-	addHeader(outputpath_broadcm, MR)
-
-	detailedcm = makeConfusion_diffLabels(eventsData[inds], "TIMESYNC", "LANDTRENDR_FINAL")
-	arrayToCsv(detailedcm, outputpath_detailedcm)
-	addHeader(outputpath_detailedcm, MR)
+# 	if parameters['tolerance'] > 0:
+# 		if "vertvals" in parameters['inputcsv']:
+# 			binnedData = applyYearTolerance(binnedData, parameters['tolerance'], matches, 
+# 			lt_nondisturbances, yearCol="YEAR")
+# 		else:
+# 			binnedData = applyYearTolerance(binnedData, parameters['tolerance'], matches,
+# 			lt_nondisturbances)
+# 			
+# 	arrayToCsv(binnedData, parameters['outputpath_yearlybins'])
+# 	addHeader(parameters['outputpath_yearlybins'], parameters['modelregion'])
+# 
+# 	#isolate events
+# 	if "vertvals" in parameters['inputcsv']:
+# 		eventsData = isolateEvents(binnedData, yearCol="YEAR")
+# 	else:
+# 		eventsData = isolateEvents(binnedData)
+# 	arrayToCsv(eventsData, parameters['outputpath_events'])
+# 	addHeader(parameters['outputpath_events'], parameters['modelregion'])
+# 
+# 	#create broad confusion matrix
+# 	labels = np.unique(eventsData["TS_MATCH"])
+# 	inds = np.where(eventsData["TIMESYNC"] != "None")
+# 	broadcm = makeConfusion(eventsData["TS_MATCH"][inds], eventsData["LT_MATCH"][inds], 
+# 	labels)
+# 	arrayToCsv(broadcm, parameters['outputpath_broadcm'])
+# 	addHeader(parameters['outputpath_broadcm'], parameters['modelregion'])
+# 
+# 	detailedcm = makeConfusion_diffLabels(eventsData[inds], "TIMESYNC", "LANDTRENDR_FINAL")
+# 	arrayToCsv(detailedcm, parameters['outputpath_detailedcm'])
+# 	addHeader(parameters['outputpath_detailedcm'], parameters['modelregion'])
 
 
 if __name__ == '__main__': 
